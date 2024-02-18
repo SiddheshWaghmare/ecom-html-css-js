@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shophify</title>
+  <link rel="stylesheet" href="2.css">
+  <style>
+    body {
+      background-color: #f1f1f1;
+      /* Peach background color */
+    }
+  </style>
+
+</head>
+
+
+
+
+
+
+
+
+<body>
+  <header>
+    <h1> Sh𝓸ph𝒾fy</h1><br><br>
+
+    <nav>
+      <ul>
+
+        <li><a href="http://127.0.0.1:3000/1.html">Home🏠</li>
+
+        <li><a href="contact.html">Contact📞</a></li>
+        <li><a href="previous-orders.html">Cart🛒</a></li>
+        </li>
+
+      </ul>
+
+    </nav>
+
+  </header>
+
+
+  <br>
+  <div id="imageContainer"></div>
+
+  <script>
+
+  var images = [
+    "",
+    "img/2.jpg",
+    "img/3.jpg",
+    "img/4.jpg",
+    "img/5.jpg",
+    "img/6.jpg",
+    "img/8.jpg",
+    "img/9.jpg",
+    "img/10.jpg"
+    // Add more image URLs as needed
+  ];
+    var currentIndex = 0;
+    var imageContainer = document.getElementById("imageContainer");
+
+    function changeImage() {
+      imageContainer.innerHTML = `<img src="${images[currentIndex]}" alt="Image ${currentIndex + 1}">`;
+
+      currentIndex++;
+      if (currentIndex >= images.length) {
+        currentIndex = 0;
+      }
+
+      setTimeout(changeImage, 5500); // Change image every 10 seconds
+    }
+
+    changeImage();
+  </script>
+
+
+
+  </style>
+
+
+
+
+
+  <main>
+
+    <!-- Product 1 -->
+    <div class="product">
+      <img src="img/off-white-jordan.gif" alt="Product 1"> <br>
+      <h2>Off White Jordan</h2>
+      <p>Materials: White Python, Red and black calf leather, Grey calf leather.
+        <br><br><br><br><br>
+      </p>
+      <p>Price:₹1,45,000.00 </p>
+      <a href="3.html"><br>
+        <button>Add to Cart</button>
+      </a>
+    </div>
+    <!-- Product 2 -->
+    <div class="product">
+      <img src="img/Google-Pixel-Watch-Home.gif" alt="Product 2">
+      <h2>Google Pixel Watch</h2>
+      <p>Stylish, feature-rich smartwatch with advanced health tracking and personalized notifications.</p>
+      <br>
+      <p>Price:₹75,000.00 </p><br>
+      <a href="3.html">
+        <button>Add to Cart</button>
+      </a>
+    </div>
+    <!-- Product 3 -->
+    <div class="product">
+      <img src="img/500_500_productGfx_19215.jpg" alt="Product 3">
+      <h2>Apple MacBook Pro </h2>
+      <p>The Apple MacBook Pro is a high-performance laptop known for its sleek design, powerful hardware, and advanced
+        features.</p>
+      <br><br><br><br>
+      <p>Price:₹99,900.00</p><br>
+      <a href="3.html">
+        <button>Add to Cart</button>
+      </a>
+    </div>
+    <!-- Product 4 -->
+    <div class="product">
+      <img src="img/bike-ark-dirk-27-5-ss.webp" alt="Product 4">
+      <h2>Montra Downtown 4</h2>
+      <p>The Montera bicycle is a versatile and rugged bike designed for off-road adventures, offering a smooth ride and
+        excellent performance on various terrains.</p>
+      <p>Price:₹25,000</p><br><br>
+      <a href="3.html">
+        <button>Add to Cart</button>
+      </a>
+    </div>
+    <!-- Product 5 -->
+    <div class="product">
+      <img src="img/fw2.jpg" alt="Product 5">
+      <h2>Flower Pot</h2>
+      <p>The flowerpot is a decorative container that adds beauty to spaces while providing a
+        nurturing environment for plants to grow.</p>
+      <p>Price:₹450</p><br><br>
+      <a href="3.html">
+        <button>Add to Cart</button>
+      </a>
+    </div>
+    <!-- Product 6 -->
+    <div class="product">
+      <img src="img/fashion-suit-tailor-clothes.jpg" alt="Product 6">
+      <h2>
+        PAUL SMITH</h2><br>
+      <p>Paul Smith Tailor is a renowned fashion brand known for its expert craftsmanship and distinctive style,
+        offering tailored clothing with a modern and sophisticated touch.</p>
+      <p>Price:₹55,550</p><br><br>
+      <a href="3.html">
+        <button>Add to Cart</button>
+      </a>
+    </div>
+    <!-- Product 7 -->
+    <div class="product">
+      <img src="img/i-phone-x-apple.gif" alt="Product 7">
+      <h2>Iphone X</h2>
+      <p>The iPhone X is a sleek and innovative smartphone that features a borderless display and advanced facial
+        recognition technology.</p><br><br><br>
+      <p>Price:₹91,900</p><br><br><br><br><br><br>
+      <a href="3.html">
+        <button>Add to Cart</button><br>
+      </a>
+    </div>
+    <!-- Product 8 -->
+    <div class="product">
+      <img src="img/images.jpeg" alt="Product 8">
+      <h2>MACBOOK AIR</h2>
+      <p>The Apple MacBook is a highly acclaimed laptop known for its premium build quality, powerful performance, and
+        seamless integration with Apple's ecosystem.</p>
+      <p>Price: ₹1,32,990</p><br><br><br><br><br><br>
+      <a href="3.html">
+        <button>Add to Cart</button><br>
+      </a>
+    </div>
+    <!-- Product 9 -->
+    <div class="product">
+      <img src="img/ap4k.jpeg" alt="Product 9">
+      <h2>Apple Watch</h2>
+
+      <p>The Apple Watch is a stylish and advanced smartwatch that offers a wide range of health and fitness features,
+        along with seamless integration with Apple devices for enhanced convenience and functionality.
+
+
+
+
+      </p>
+      <p>Price: ₹20,000</p><br><br><br><br><br>
+      <a href="3.html">
+        <button>Add to Cart</button>
+      </a>
+    </div>
+
+    <!-- Product 10 -->
+    <div class="product">
+      <img src="img/football.jpg" alt="Product 10">
+      <h2>Nike Football Ball</h2>
+      <p>Nike Football: Unleash your inner champion with the ultimate blend of style, innovation, and unrivaled
+        performance on the pitch.</p><br><br>
+      <p>Price: ₹1,500</p><br><br><br><br><br>
+      <a href="3.html">
+        <button>Add to Cart</button>
+      </a>
+    </div>
+
+    <!-- Product 11 -->
+    <div class="product">
+      <img src="img/hometh.webp" alt="Product 11">
+      <h2>SONY HOME Theater</h2>
+      <p>Immerse yourself in a cinematic audio experience that transports you to the heart of every movie, with
+        crystal-clear sound and powerful bass that fills your room.</p>
+      <p>Price: ₹20,000</p>
+      <a href="3.html">
+        <button>Add to Cart</button>
+      </a>
+    </div>
+
+    <!-- Product 12 -->
+    <div class="product">
+      <img src="img/jacket.avif" alt="Product 12">
+      <h2>Canada Goose Jacket
+      </h2>
+      <p>Stylish outerwear piece that effortlessly combines fashion and functionality, keeping you warm.</p>
+      <p>Price: ₹5,700</p>
+      <a href="3.html">
+        <button>Add to Cart</button>
+      </a>
+    </div>
+
+
+
+    <!-- Product 13 -->
+    <div class="product">
+      <img src="img/tv.jpeg" alt="Product 13">
+      <h2>Samsung N4310 4 Series</h2>
+      <p>Immerse yourself in stunning visuals and lifelike colors, as every scene comes to life with exceptional clarity
+        and breathtaking detail.</p>
+      <br><br><br><br><br>
+      <p>Price: ₹80,000</p><br><br>
+      <a href="3.html">
+        <button>Add to Cart</button>
+      </a>
+    </div>
+
+    <!-- Product 14 -->
+    <div class="product">
+      <img src="img/xbox.jpg" alt="Product 14">
+      <h2>XBOX Series X</h2>
+      <p>The Xbox Series X is a powerful gaming console from Microsoft, offering next-generation graphics and
+        performance.</p>
+      <br> <br> <br> <br><br><br><br><br>
+      <p>Price:₹52,000 </p>
+
+      <a href="3.html">
+        <br><br> <button>Add to Cart</button>
+      </a>
+    </div>
+
+    <!-- Product 15 -->
+    <div class="product">
+      <img src="img/toy.jpg" alt="Product 15">
+      <h2>Disney Toy</h2>
+      <p>Wonderful toys for childern joy</p>
+      <br><br><br><br><br><br><br><br><br><br><br>
+      <p>Price: ₹1,000</p>
+      <a href="3.html">
+        <br><br><button>Add to Cart</button>
+      </a>
+    </div>
+
+    <!-- Product 16 -->
+    <div class="product">
+      <img src="img/wp3749197.jpg" alt="Product 16">
+      <h2>Harry Potter Book</h2>
+      <p> An Adeventures of Harry Potter & mystories</p>
+
+
+      <p>Price: ₹1,000</p>
+      <a href="3.html">
+        <button>Add to Cart</button>
+      </a>
+    </div>
+
+    <!-- Product 17 -->
+    <div class="product">
+      <img src="img/The-Hobbit-Book-Cover-441x600.jpg" alt="Product 17">
+      <h2>The Hobbit Book</h2>
+      <p>An Adeventure book with mystories</p><br><br>
+      <br>
+      <p>Price:₹800</p>
+      <a href="3.html">
+        <button>Add to Cart</button>
+      </a>
+    </div>
+
+    <!-- Product 18 -->
+    <div class="product">
+      <img src="img/msn.avif" alt="Product 18">
+      <h2>MSN Triao Frame </h2>
+      <p>The frame of iconic trio of MSN</p>
+      <br><br><br><br><br><br>
+      <p>Price: ₹1,500</p>
+      <a href="3.html">
+        <br><br><button>Add to Cart</button>
+      </a>
+    </div>
+    <div class="product">
+      <img src="img/handbag.jpg" alt="Product 18">
+      <h2>Louis Vuitton Boulogne Bag</h2>
+      <p>A Louis Vuitton bag is a luxurious fashion accessory known for its iconic monogram pattern and high-quality
+        craftsmanship.</p>
+      <br>
+      <p>Price: ₹255,500</p>
+      <a href="3.html">
+        <button>Add to Cart</button>
+      </a>
+    </div>
+    <div class="product">
+      <img src="img/matress.webp" alt="Product 18">
+      <h2>Relexo Luxury Bed</h2><br><br>
+      <br>
+      <p>The Relexo Luxury Upholstered Bed is a stylish and comfortable bed featuring plush upholstery, designed to
+        provide a luxurious experience.</p>
+      <br>
+      <p>Price: ₹45,000</p>
+      <a href="3.html">
+        <button>Add to Cart</button>
+      </a>
+    </div>
+    <div class="product">
+      <img src="img/gaming pc 1.webp" alt="Product 18">
+      <h2>NVIDIA RTX 3060 CUSTOM PC</h2>
+      <p>A custom PC built with NVIDIA RTX 3060 and Ryzen 5000 series offers powerful graphics and processing
+        capabilities, ideal for high-performance gaming and content creation.</p>
+      <br><br><br>
+      <p>Price: ₹165,000</p>
+      <a href="3.html">
+        <button>Add to Cart</button>
+      </a>
+    </div>
+    <div class="product">
+      <img src="img/cr7 fram.webp" alt="Product 18">
+      <h2>Cristiano Ronaldo poster - Portugal</h2>
+      <p>The Cristiano Ronaldo poster featuring Portugal showcases the iconic football player's national team allegiance
+        and captures his exceptional talent on the field.</p>
+      <br>
+      <p>Price: ₹1,000</p>
+      <a href="3.html">
+        <button>Add to Cart</button>
+      </a>
+    </div>
+    <div class="product">
+      <img src="img/watch.gif" alt="Product 18">
+      <h2>OMEGA X SWATCH MOONSWATCH</h2>
+      <p>The OMEGA x Swatch Moonwatch combines the heritage of OMEGA's Moonwatch collection with the contemporary design
+        elements of Swatch, resulting in a unique and stylish timepiece.</p>
+      <br><br><br>
+      <p>Price: ₹222,000</p>
+      <a href="3.html">
+        <button>Add to Cart</button>
+      </a>
+    </div>
+    <div class="product">
+      <img src="img/shoes.webp" alt="Product 18">
+      <h2>ORANGE LOBSTER NIKE SHOES</h2>
+
+      <p>The Orange Lobster Nike shoes feature a vibrant orange color scheme and lobster-inspired design, creating a
+        bold and eye-catching footwear option.</p>
+      <br><br><br><br><br>
+      <p>Price: ₹40,000</p>
+      <a href="3.html">
+        <button>Add to Cart</button>
+      </a>
+    </div>
+
+
+
+  </main>
+  <footer>
+    <p>Copyright &copy; 2023 Shophify <br>
+      <p1>Siddhesh Waghmre</p1>
+    </p>
+  </footer>
+</body>
+
+</html>
