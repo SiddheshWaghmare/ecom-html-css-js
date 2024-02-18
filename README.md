@@ -14,5 +14,4 @@ To get started with Shophify, simply clone the repository and open the index.htm
 Contributing
 Contributions are welcome! If you'd like to contribute to Shophify, feel free to submit pull requests or open issues to suggest improvements or report bugs.
 
-License
-This project is licensed under the MIT License - see the LICENSE file for details.
+
